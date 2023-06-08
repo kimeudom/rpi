@@ -77,11 +77,21 @@ For Linux systems
 
     [Selecting](.assets/src/videos/select%20image%20and%20sd%20card.mkv)
   - Setup the configuration for the device
-    ![Setup](.assets/src/pics/raspbian%20config.png)
+    <p>
+    <img src=".assets/src/pics/raspbian%20config.png" alt="config" width="">
+    </p>
+
 
   - Write to disk and vertify
-![Write](.assets/src/pics/writing%20os.png) ![Vertify](.assets/src/pics/vertifying%20os.png)
-![Complete](.assets/src/pics/complete%20os.png)
+  <p align="center">
+  <img src=".assets/src/pics/writing%20os.png" alt="Write" width="300px" height="" />
+  </p>
+  <p align="center">
+  <img src=".assets/src/pics/vertifying%20os.png" alt="Vertify" width="300px" height="" />
+  </p>
+  <p align="center">
+  <img src=".assets/src/pics/complete%20os.png" alt="Complete" width="300px" height="" />
+  </p>
 
   - SSH into the Pi
 
@@ -95,12 +105,45 @@ For Linux systems
       
   - Setup VS Code server
 
-    On your PC's VS Code, install the extention below
+    - On your PC's VS Code, install the extention below
     [remote-ssh (marketplace link)](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh)
 
-    ![Remote Server](.assets/src/pics/remote%20server%20.png)
+   <p align="center">
+   <img alt="Extension" src=".assets/src/pics/remote%20server%20.png" height="" width="300px"/>
+   </p>
+
+  - Add a remote host
+
+ <p align="center">
+   <img alt="Extension" src=".assets/src/pics/adding_remote.png" height="" width="300px"/>
+   </p>
+
+  - Enter the SSH information
+
+ <p align="center">
+   <img alt="Extension" src=".assets/src/pics/pi_ssh_syntax.png" height="" width="400px"/>
+   </p>
+
+  - VS Code will setup the remote server
+
+ <p align="center">
+   <img alt="Extension" src=".assets/src/pics/setting_up_vscode_server.png" height="" width="400px"/>
+   </p>
+
+ <p align="center">
+   <img alt="Extension" src=".assets/src/pics/connected_to_pi.png" height="" width="400px"/>
+   </p>
+
+
+   With the hardware and software setup, you can proceed to the basics section
 
 ### Basics<a name="Basics"> </a>
+
+  1. [Lighting an LED](.assets/md%20files/lighting_LED.md)
+
+     A hello world of sorts. [link](.assets/md%20files/lighting_LED.md)
+  1. [[Blinking an LED]]
+
 ### Projects<a name="projects"> </a>
 ### Resources<a name="resources"> </a>
 ### Contributing<a name="contributing"> </a>
