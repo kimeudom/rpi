@@ -42,4 +42,4 @@ Refer to this diagram to understand the pins we are using
 ### Description
 Since pin 1 is always ON delivering 3.3V, we can use it to connect an LED. 
 The resistor is to ensure we do not fry the LED.
-The ground connection is to complete the circuit
+The ground connection is to complete the circuit.
