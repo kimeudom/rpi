@@ -142,7 +142,9 @@ For Linux systems
   1. [Lighting an LED](.assets/md%20files/lighting_LED.md)
 
      A hello world of sorts. [link](.assets/md%20files/lighting_LED.md)
-  1. [[Blinking an LED]]
+  1. [[Blinking an LED]]()
+
+      An improvement of the above that uses python logic to blink the led indefinately or for a set number of times. [link]()
 
 ### Projects<a name="projects"> </a>
 ### Resources<a name="resources"> </a>
