@@ -42,7 +42,4 @@ Refer to this diagram to understand the pins we are using
 ### Description
 Making use of the python RPi library and the GPIO methods, we can make a program that blinks an LED for a indefinate number of times or for a set number of times
 
-<!-- Blinking Gist -->
-{% gist kimeudom/53ef977e4276f5a5bfb11cb637a5d942 %}
-
 The link to the code is [here](../../iot/basic/blink.py)
