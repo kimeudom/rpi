@@ -92,4 +92,117 @@ except KeyboardInterrupt:
   GPIO.cleanup()
 ```
 
-[Code](../../iot/basic/push%20up%20%26%20push%20down/push_up_down.py)
+The code [link].(../../iot/basic/push%20up%20%26%20push%20down/push_up_down.py)
+
+
+# INTERNAL PUSH DOWN & PUSH UP RESISTORS
+
+The Raspberry Pi has internal components that can be used as a push down or push up resistor without the need of implemenitng it on a real board.
+
+It utilizes the RPi.GPIO.setup() method to configure a GPIO pin as either a push up or push down resistor. 
+
+e.g.
+
+##### A normal GPIO input pin setup
+```py
+  GPIO.setup(pinNumber, GPIO.IN)
+```
+
+PUSH UP
+```py
+  GPIO.setup(pinNumber, GPIO.IN, pull_up_pull_down=GPIO.PUD_UP)
+```
+PUSH DOWN
+```py
+  GPIO.setup(pinNumber, GPIO.IN, pull_up_pull_down=GPIO.PUD_DOWN)
+```
+## Step Up implementation
+Note the input connection to Vcc
+
+#### Diagram Scematic
+
+<p align="center">
+  <img src="../src/pics/internal_push_up.png" alt="Diagram Schematic" width="300px">
+</p>
+
+#### Circuit Schematic
+<p align="center">
+  <img src="../src/pics/internal_push_down_schematic.png" alt="Circuit Schematic" width="300px">
+</p>
+
+## Step Down implementation
+Note the input connection to GND
+
+#### Diagram Scematic
+
+<p align="center">
+  <img src="../src/pics/internal_push_down.png" alt="Diagram Schematic" width="300px">
+</p>
+
+#### Circuit Schematic
+<p align="center">
+  <img src="../src/pics/internal_push_down_schematic.png" alt="Circuit Schematic" width="300px">
+</p>
+
+--- 
+##### internal_push_up.py
+
+```py
+# This code utilizes the internal step up functionality of the RPi
+# There is no need to utilize breadboad step up resistors
+
+import RPi.GPIO as GPIO
+from time import sleep
+
+# Board setup mode
+GPIO.setmode(GPIO.BOARD)
+
+# The input pin for the push button read
+inPin = 40
+
+# setting up the button
+GPIO.setup(inPin, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+
+try: 
+  while True:
+    sleep(0.1)
+    if(GPIO.input(inPin) == 0):
+      print(GPIO.input(inPin))
+
+except KeyboardInterrupt:
+  GPIO.cleanup()
+  print("Exited\n")
+```
+
+The code [link].(<../../iot/basic/push up & push down/internal_push_up.py>)
+
+##### internal_push_down.py
+
+```py
+# This code utilizes the internal step up functionality of the RPi
+# There is no need to utilize breadboad step up resistors
+
+import RPi.GPIO as GPIO
+from time import sleep
+
+# Board setup mode
+GPIO.setmode(GPIO.BOARD)
+
+# The input pin for the push button read
+inPin = 40
+
+# setting up the button
+GPIO.setup(inPin, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
+
+try: 
+  while True:
+    sleep(0.1)
+    if(GPIO.input(inPin) == 1):
+      print(GPIO.input(inPin))
+
+except KeyboardInterrupt:
+  GPIO.cleanup()
+  print("Exited\n")
+```
+
+The code [link].(<../../iot/basic/push up & push down/internal_push_down.py>)
