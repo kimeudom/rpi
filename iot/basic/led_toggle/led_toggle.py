@@ -7,6 +7,10 @@ from time import sleep
 # Led Flag state
 FLAG = 0
 
+# The push button state
+currState = 1
+currStateOld = 1
+
 # Board Setup Config
 GPIO.setmode(GPIO.BOARD)
 
@@ -21,20 +25,16 @@ GPIO.setup(ledPin, GPIO.OUT)
 i = 0
 
 try:
-  currState = GPIO.input(inPin)
   while True:
-    if(currState != GPIO.input(inPin)):
-      if(currState == GPIO.input(inPin)):
-         # Toggle the light switch
-         i+=1
-         print("Toggled", i)
-         if(FLAG == 0):
-            GPIO.output(ledPin, 1)
-            FLAG = 1
-         else:
-            GPIO.output(ledPin, 0)
-            FLAG = 0
+   currState = GPIO.input(inPin)
+   if(currState == 1 and currStateOld == 0):
+     # Toggle the led
+     i += 1
+     print("Toggled ", i)
+     FLAG = not FLAG
+     GPIO.output(ledPin, FLAG)
 
+   currStateOld = currState
 
 except KeyboardInterrupt:
     GPIO.cleanup()
