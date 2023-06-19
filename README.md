@@ -152,7 +152,15 @@ For Linux systems
 
   1. [Toggle Switch](.assets/md%20files/toggle.md)
 
-      A way to toggle an LED on or off. [Link]
+      A way to toggle an LED on or off. [Link](.assets/md%20files/toggle.md)
+  
+  1. [Pulse Width Modulation](.assets/md%20files/pwm.md)
+
+      Pulse Width Modulation (PWM) is a technique used to encode infromation in a signal or control power delivery of systems.
+      By varying a signal (in this case a square wave signal) to regulate power supplied to a load.
+
+      More. [Link](.assets/md%20files/pwm.md)
+
 
 
 ### Projects<a name="projects"> </a>
