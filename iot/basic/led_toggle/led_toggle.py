@@ -1,8 +1,7 @@
-# This program toggles an LED on or off 
+# This program toggles an LED on or off
 # it utilizes the internal pull down resistor for gpio input
 
 import RPi.GPIO as GPIO
-from time import sleep
 
 # Led Flag state
 FLAG = 0
@@ -25,16 +24,16 @@ GPIO.setup(ledPin, GPIO.OUT)
 i = 0
 
 try:
-  while True:
-   currState = GPIO.input(inPin)
-   if(currState == 1 and currStateOld == 0):
-     # Toggle the led
-     i += 1
-     print("Toggled ", i)
-     FLAG = not FLAG
-     GPIO.output(ledPin, FLAG)
+    while True:
+        currState = GPIO.input(inPin)
+        if (currState == 1 and currStateOld == 0):
+            # Toggle the led
+            i += 1
+            print("Toggled ", i)
+            FLAG = not FLAG
+            GPIO.output(ledPin, FLAG)
 
-   currStateOld = currState
+        currStateOld = currState
 
 except KeyboardInterrupt:
     GPIO.cleanup()
