@@ -149,6 +149,12 @@ For Linux systems
   1. [Step Up and Step Down resistors](.assets/md%20files/push_up_down.md)
 
       Why when expecting input from a GPIO pin, it is good to consider a step up or step down resistor to avoid the indeterminate state (Ƶ<sub>α</sub>) [link](.assets/md%20files/push_up_down.md).
+
+  1. [Toggle Switch](.assets/md%20files/toggle.md)
+
+      A way to toggle an LED on or off. [Link]
+
+
 ### Projects<a name="projects"> </a>
 ### Resources<a name="resources"> </a>
 ### Contributing<a name="contributing"> </a>
