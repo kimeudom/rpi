@@ -157,7 +157,7 @@ For Linux systems
 
   1. [Toggle Switch](.assets/md%20files/toggle.md)
 
-      A way to toggle an LED on or off. [Link](.assets/md%20files/toggle.md)
+      A way to toggle an LED on or off. [link](.assets/md%20files/toggle.md)
   
   1. [Pulse Width Modulation](.assets/md%20files/pwm.md)
 
@@ -165,6 +165,10 @@ For Linux systems
       By varying a signal (in this case a square wave signal) to regulate power supplied to a load.
 
       More. [Link](.assets/md%20files/pwm.md)
+  
+  1. [Servo Motor](.assets/md%20files/servo.md)
+
+      A servo motor is a sensory actuator that allows for precise control of angular or linear position. [link](.assets/md%20files/servo.md)
 
 
 
