@@ -7,7 +7,7 @@ GPIO.setmode(GPIO.BOARD)
 
 # Pins
 echo = 15
-trig = 16
+trig = 40
 
 GPIO.setup(trig, GPIO.OUT)
 GPIO.setup(echo, GPIO.IN)
@@ -15,9 +15,9 @@ GPIO.setup(echo, GPIO.IN)
 # Sends a trigger signal to the sensor requesting it to do it's magic
 def sendTrigger():
   GPIO.output(trig, 0)
-  time.sleep(2E-6)
+  time.sleep(2)
   GPIO.output(trig, 1)
-  time.sleep(10E-6)
+  time.sleep(10)
   GPIO.output(trig, 0)
 
 # Returns the time delta of a round trip time for the sensor's signal
@@ -30,7 +30,7 @@ def delta() -> float:
   end = time.time()
 
   # Converting from micro seconds to seconds
-  return (start - end) * 1E6
+  return (end - start) * 1E6
 
 # Returns the distance between the sensor and the object in centimeters
 def distance(delta: float) ->float:
@@ -44,7 +44,7 @@ def distance(delta: float) ->float:
 try: 
   while True:
     sendTrigger()
-    print(delta())
+    print(distance(delta()), "cm")
     time.sleep(.5)
 
 except KeyboardInterrupt:
