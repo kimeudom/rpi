@@ -6,7 +6,7 @@ import time
 GPIO.setmode(GPIO.BOARD)
 
 # Pins
-echo = 15
+echo = 38
 trig = 40
 
 GPIO.setup(trig, GPIO.OUT)
@@ -15,9 +15,9 @@ GPIO.setup(echo, GPIO.IN)
 # Sends a trigger signal to the sensor requesting it to do it's magic
 def sendTrigger():
   GPIO.output(trig, 0)
-  time.sleep(2)
+  time.sleep(2E-6)
   GPIO.output(trig, 1)
-  time.sleep(10)
+  time.sleep(10E-6)
   GPIO.output(trig, 0)
 
 # Returns the time delta of a round trip time for the sensor's signal
