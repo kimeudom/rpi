@@ -169,7 +169,12 @@ For Linux systems
   1. [Servo Motor](.assets/md%20files/servo.md)
 
       A servo motor is a sensory actuator that allows for precise control of angular or linear position. [link](.assets/md%20files/servo.md)
+  
+  1. [Ultrasonic Sensor](.assets/md%20files/ultrasonic.md)
 
+      Using ultrasonic waves to measure distances. Using the HC-SRO4 ultrasonic sensor(range 2cm to 400cm) ***Operating voltage is 5V.***
+
+      [Link](.assets/md%20files/ultrasonic.md)
 
 
 ### Projects<a name="projects"> </a>
