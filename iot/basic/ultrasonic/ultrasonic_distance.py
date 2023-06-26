@@ -6,8 +6,8 @@ import time
 GPIO.setmode(GPIO.BOARD)
 
 # Pins
-echo = 38
-trig = 40
+echo = 40
+trig = 38
 
 GPIO.setup(trig, GPIO.OUT)
 GPIO.setup(echo, GPIO.IN)
