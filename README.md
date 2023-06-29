@@ -175,7 +175,11 @@ For Linux systems
       Using ultrasonic waves to measure distances. Using the HC-SRO4 ultrasonic sensor(range 2cm to 400cm) ***Operating voltage is 5V.***
 
       [Link](.assets/md%20files/ultrasonic.md)
+  
+  1. [Displays](.assets/md%20files/displays.md)
+      A guide on how to use an array of displays e.g., dot matrix displays, segment displays (1 digit and 4 digit displays), led bar segment display, lcd displays e.t.c. 
 
+      [Link](.assets/md%20files/displays.md)
 
 ### Projects<a name="projects"> </a>
 ### Resources<a name="resources"> </a>
