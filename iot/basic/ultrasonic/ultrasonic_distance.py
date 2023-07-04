@@ -30,7 +30,7 @@ def delta() -> float:
   end = time.time()
 
   # Converting from micro seconds to seconds
-  return (end - start) * 1E6
+  return (end - start) 
 
 # Returns the distance between the sensor and the object in centimeters
 def distance(delta: float) ->float:
