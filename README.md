@@ -6,6 +6,10 @@ This repository should be treated as a way to showcase projects as well as serve
 
 ¡Vamonos! Let's go!
 
+# Projects
+
+<a><img src='.assets/prj%20gallary/temp_humid/DSC00189.JPG' width='300px'></a>
+
 ## Table of Contents
 
   1.  [Getting Started](#getting-started)
@@ -183,7 +187,20 @@ For Linux systems
       [Link](.assets/md%20files/displays.md)
 
 ### Projects<a name="projects"> </a>
+#### 1. [Temperature and Humidity Sensor Project](.assets/md%20projects/temp_humid.md)
+
+  A project that shows real time ambient temperature and humidity captured by the DHT11 sensor and displayed on the 1602A LCD display.
+
+  [Link](.assets/md%20projects/temp_humid.md)
+
+
 ### Resources<a name="resources"> </a>
+#### 1. Fritzing
+Fritzing. (Version 0.9.3b). Fritzing. Retrieved from https://fritzing.org
+
+#### 2. Youtube @paulmcwhorter
+Awsome video series on RPi stuff. https://youtube.com/playlist?list=PLGs0VKk2DiYxdMjCJmcP6jt4Yw6OHK85O
+
 ### Contributing<a name="contributing"> </a>
 
 ### License<a name="license"> </a>
