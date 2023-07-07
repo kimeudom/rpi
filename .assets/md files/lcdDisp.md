@@ -84,7 +84,7 @@ $ pip install smbus2
 The command lsmod should return something of the sort. 
 
 ```
-lsmod | grep ic2
+lsmod | grep i2c
 ```
 <p>
 <img src='../src/pics/lsmod.png' width='400px'>
