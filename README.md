@@ -8,7 +8,7 @@ This repository should be treated as a way to showcase projects as well as serve
 
 # Projects
 
-<a><img src='.assets/prj%20gallary/temp_humid/DSC00189.JPG' width='300px'></a>
+<a href='https://github.com/kimeudom/rpi/blob/master/.assets/md%20projects/temp_humid.md'><img src='.assets/prj%20gallary/temp_humid/DSC00189.JPG' width='300px'></a>
 
 ## Table of Contents
 
