@@ -86,14 +86,31 @@ The command lsmod should return something of the sort.
 ```
 lsmod | grep i2c
 ```
-<p>
+<p align='center'>
 <img src='../src/pics/lsmod.png' width='400px'>
 </p>
+
+This command should return the address of the LCD that will be implemented in the code segment below
+'''
+i2cdetect -y 1
+'''
+
+<p align='center'>
+<img src='../src/pics/i2c_address.png' width='400px'>
+</p>
+
+**Take note of the address returned. That will be important**
 
 ---
 
 # Showing a greeting message
 This implimentation shows a greeting message on the LCD screen
+**In the lcd.init() function, pass paste the address returned in hexadecimal format**
+
+<p align='center'>
+<img src='../src/pics/i2c_address.png' width='400px'>
+</p>
+
 
 
 Make sure the [LCD1062.py](../../iot/basic/displays/LCD/LCD1602.py) file is in the same directory as the python program below
