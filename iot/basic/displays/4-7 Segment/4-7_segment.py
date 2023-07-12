@@ -2,53 +2,73 @@
 # On a 4 digit 7 segment display
 
 import RPi.GPIO as GPIO
-import time
+import sys
+import time, datetime
+
+delay = 0.005
 
 GPIO.setmode(GPIO.BOARD)
 
 # The segment pins arranged from A to H 
-segments = [11, 12, 13, 15, 16, 18, 38, 40]
+segments = [18, 19, 21, 22, 23, 24, 26, 29]
 for segment in segments:
    GPIO.setup(segment, GPIO.OUT)
    GPIO.output(segment, 0)
 
 # control over the individual digit activation from right to left
-digits = [22, 29, 36, 37]
+digits = [11, 13, 15, 16]
 for digit in digits:
    GPIO.setup(digit, GPIO.OUT)
-   print(digit)
    GPIO.output(digit, 1)
 
-# numbers dictionary
-num = {
-    ' ':(0,0,0,0,0,0,0),
-    '0':(1,1,1,1,1,1,0),
-    '1':(0,1,1,0,0,0,0),
-    '2':(1,1,0,1,1,0,1),
-    '3':(1,1,1,1,0,0,1),
-    '4':(0,1,1,0,0,1,1),
-    '5':(1,0,1,1,0,1,1),
-    '6':(1,0,1,1,1,1,1),
-    '7':(1,1,1,0,0,0,0),
-    '8':(1,1,1,1,1,1,1),
-    '9':(1,1,1,1,0,1,1)
-    }
+num = [[1,1,1,1,1,1,0],\
+       [0,1,1,0,0,0,0],\
+       [1,1,0,1,1,0,1],\
+       [1,1,1,1,0,0,1],\
+       [0,1,1,0,0,1,1],\
+       [1,0,1,1,0,1,1],\
+       [1,0,1,1,1,1,1],\
+       [1,1,1,0,0,0,0],\
+       [1,1,1,1,1,1,1],\
+       [1,1,1,1,0,1,1]]
+
+def showDisplay(digit):
+   for i in range(0,4):
+      sel = [1,1,1,1]
+      sel[i] = 0
+      GPIO.output(digits, sel)
+
+      if digit[i].replace(".", "") == " ":
+        GPIO.output(segments, 0)
+        continue
+    
+      numDisplay = int(digit[i].replace(".", ""))
+      GPIO.output(segments[:-1], num[numDisplay]) # Activating the segments
+
+      if digit[i].count(".") == 1:
+        GPIO.output(segments[-1], 1)
+      else:
+        GPIO.output(segments[-1], 0)
+    
+      time.sleep(delay)
+
+def getTime():
+    now = datetime.datetime.now()
+    outString = str(now.hour) + str(now.minute)
+    print("Time : ", outString)
+
+    arr = list(outString)
+
+    for i in range(len(arr)):
+       if arr[i] == "." : arr[i - 1] += arr[i]
+    
+    while "." in arr: arr.remove(".")
+
+    return arr
 
 try:
     while True:
-        n = time.ctime()[11:13] + time.ctime()[14:16]
-        s = str(n).rjust(4)
-        for digit in range (4):
-            for loop in range(7):
-                GPIO.output(segments[loop], num[s[digit]][loop])
-                if (int)(time.ctime()[18:19]) % 2 == 0 and digit == 1:
-                    GPIO.output(40, 1)
-                else:
-                    GPIO.output(40, 0)
-            
-            GPIO.output(digits[digit], 0)
-            time.sleep(0.001)
-            GPIO.output(digits[digit], 1)
+       showDisplay(getTime())
 
 except KeyboardInterrupt:
    GPIO.cleanup()
