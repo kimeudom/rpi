@@ -145,15 +145,15 @@ For Linux systems
 
   1. [Lighting an LED](.assets/md%20files/lighting_LED.md)
 
-     A hello world of sorts. [link](.assets/md%20files/lighting_LED.md)
+     A hello world of sorts.
 
   1. [RGB LED](.assets/md%20files/RGB.md)
     
-      A way to control RGB LED configurations to achieve any colour. [link](.assets/md%20files/RGB.md)
+      A way to control RGB LED configurations to achieve any colour.
 
   1. [Blinking an LED](.assets/md%20files/blinking_LED.md)
 
-      An improvement of the above that uses python logic to blink the led indefinately or for a set number of times. [link](.assets/md%20files/blinking_LED.md)
+      An improvement of the above that uses python logic to blink the led indefinately or for a set number of times.
 
   1. [Step Up and Step Down resistors](.assets/md%20files/push_up_down.md)
 
@@ -161,37 +161,33 @@ For Linux systems
 
   1. [Toggle Switch](.assets/md%20files/toggle.md)
 
-      A way to toggle an LED on or off. [link](.assets/md%20files/toggle.md)
+      A way to toggle an LED on or off.
   
   1. [Pulse Width Modulation](.assets/md%20files/pwm.md)
 
       Pulse Width Modulation (PWM) is a technique used to encode infromation in a signal or control power delivery of systems.
       By varying a signal (in this case a square wave signal) to regulate power supplied to a load.
 
-      More. [Link](.assets/md%20files/pwm.md)
   
   1. [Servo Motor](.assets/md%20files/servo.md)
 
-      A servo motor is a sensory actuator that allows for precise control of angular or linear position. [link](.assets/md%20files/servo.md)
+      A servo motor is a sensory actuator that allows for precise control of angular or linear position.
   
   1. [Ultrasonic Sensor](.assets/md%20files/ultrasonic.md)
 
       Using ultrasonic waves to measure distances. Using the HC-SRO4 ultrasonic sensor(range 2cm to 400cm) ***Operating voltage is 5V.***
 
-      [Link](.assets/md%20files/ultrasonic.md)
   
   1. [Displays](.assets/md%20files/displays.md)
 
       A guide on how to use an array of displays e.g., dot matrix displays, segment displays (1 digit and 4 digit displays), led bar segment display, lcd displays e.t.c. 
 
-      [Link](.assets/md%20files/displays.md)
 
 ### Projects<a name="projects"> </a>
 #### 1. [Temperature and Humidity Sensor Project](.assets/md%20projects/temp_humid.md)
 
   A project that shows real time ambient temperature and humidity captured by the DHT11 sensor and displayed on the 1602A LCD display.
 
-  [Link](.assets/md%20projects/temp_humid.md)
 
 
 ### Resources<a name="resources"> </a>
