@@ -182,6 +182,9 @@ For Linux systems
 
       A guide on how to use an array of displays e.g., dot matrix displays, segment displays (1 digit and 4 digit displays), led bar segment display, lcd displays e.t.c. 
 
+  1. [Motion Sensor](.assets/md%20files/motion_sensor.md)
+      Using a Passive InfRared (PIR) motin senosr to detect target movement in front of the sensor. 
+      This can be used as a trigger mechanism for a larger operation. e.g., turning lights on/off, setting of an alarm etc.
 
 ### Projects<a name="projects"> </a>
 #### 1. [Temperature and Humidity Sensor Project](.assets/md%20projects/temp_humid.md)
