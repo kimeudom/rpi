@@ -8,6 +8,8 @@ Collect real time ambient temperature and humidity of the room you are in and di
 <img src='../prj%20gallary/temp_humid/DSC00239.JPG' width='300px'>
 </p>
 
+[Project Gallary](../prj%20gallary/temp_humid/)
+
 ---
 
 ## Implimentation Diagram
