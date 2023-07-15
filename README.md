@@ -8,7 +8,21 @@ This repository should be treated as a way to showcase projects as well as serve
 
 # Projects
 
-<a href='https://github.com/kimeudom/rpi/blob/master/.assets/md%20projects/temp_humid.md'><img src='.assets/prj%20gallary/temp_humid/DSC00189.JPG' width='300px'></a>
+<div id="projects-quick-look" style="display: inline-block;">
+<a href='https://github.com/kimeudom/rpi/blob/master/.assets/md%20projects/temp_humid.md'>
+<div >
+<img src='.assets/prj%20gallary/temp_humid/DSC00189.JPG' width='300px'>
+<p align="centre">Temperature And Humidity Detection Project</p>
+</div>
+</a>
+
+<a href='https://github.com/kimeudom/rpi/blob/master/.assets/md%20projects/motion_sensor.md'>
+<div>
+<img src='.assets/prj%20gallary/motion_detection/DSC00486.JPG' width='300px'>
+<p align="centre">Motion Detection Project</p>
+</div>
+</a>
+</div>
 
 ## Table of Contents
 
@@ -191,6 +205,9 @@ For Linux systems
 
   A project that shows real time ambient temperature and humidity captured by the DHT11 sensor and displayed on the 1602A LCD display.
 
+#### 1. [Motion Detection Project](.assets/md%20projects/temp_humid.md)
+
+  Given a target area monitored by a Passive InfRared (PIR) sensor, this project reports the number of detected disruptions in the area.
 
 
 ### Resources<a name="resources"> </a>
