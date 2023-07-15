@@ -2,6 +2,8 @@
 
 # Objective
 Detect motion in the target area and note the number of disturbances in the area.
+#### Disclaimer
+This implimentation has a 5s timeout after a disturbance has been detected. The next disturbance can only be recorded after the 5s has elapsed.
 
 <p align='center'>
 <img src='../prj%20gallary/motion_detection/DSC00486.JPG' width='300px'>
