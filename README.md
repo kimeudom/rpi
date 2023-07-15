@@ -205,7 +205,7 @@ For Linux systems
 
   A project that shows real time ambient temperature and humidity captured by the DHT11 sensor and displayed on the 1602A LCD display.
 
-#### 1. [Motion Detection Project](.assets/md%20projects/temp_humid.md)
+#### 1. [Motion Detection Project](.assets/md%20projects/motion_sensor.md)
 
   Given a target area monitored by a Passive InfRared (PIR) sensor, this project reports the number of detected disruptions in the area.
 
