@@ -10,7 +10,7 @@ Collect real time ambient temperature and humidity of the room you are in and di
 
 ---
 
-## Photo Sample
+## Implimentation Diagram
 <p align='center'>
 <img src='../src/pics/temp_humid.png' width='800px'>
 </p>
