@@ -7,3 +7,4 @@ It is a grid of 8 columns and 8 rows of individual LEDs. Each dot is individuall
 <p align='center'>
 <img src='../src/pics/8x8_matrix_display.png' width='400px'>
 </p>
+
