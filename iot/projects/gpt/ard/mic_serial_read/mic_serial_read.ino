@@ -1,12 +1,21 @@
 const int micInput = A0;  // Analog pin for KY-038 sensor
-int sensorValue;          // Variable to store the sensor value
+const int BAUD_RATE = 9600;
 
 void setup() {
-  Serial.begin(9600);     // Initialize serial communication at 9600 bps
+  Serial.begin(BAUD_RATE);  // Initialize serial communication at specified baud rate
 }
 
 void loop() {
-  sensorValue = analogRead(analogPin); // Read the analog value from the sensor
-  Serial.println(sensorValue);        // Send the value to the PC
-  delay(100);                         // Add a small delay for stability
+  int sensorValue = analogRead(micInput);  // Read the analog value from the sensor
+  
+  // Convert the analog value to a 16-bit integer in the range -32768 to 32767
+  int digitalValue = map(sensorValue, 0, 1023, -32768, 32767);
+
+
+  // Send the digital audio value as two bytes (16 bits) over the serial port
+  Serial.write((digitalValue >> 8) & 0xFF);  // High byte
+  Serial.write(digitalValue & 0xFF);         // Low byte
+
+  // Add a small delay for stability (approximate sample rate of 44100 Hz)
+  delayMicroseconds(22675);  // Note: This is an approximate value for 44100 KHz sample rate
 }
