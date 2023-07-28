@@ -14,7 +14,9 @@ void loop() {
 
   // Send the digital audio value as two bytes (16 bits) over the serial port
   Serial.write((digitalValue >> 8) & 0xFF);  // High byte
-  Serial.write(digitalValue & 0xFF);         // Low byte
+  Serial.println();
+  Serial.write(digitalValue & 0xFF); // Low byte
+  Serial.println();
 
   // Add a small delay for stability (approximate sample rate of 44100 Hz)
   delayMicroseconds(22675);  // Note: This is an approximate value for 44100 KHz sample rate
