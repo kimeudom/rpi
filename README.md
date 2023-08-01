@@ -199,6 +199,9 @@ For Linux systems
   1. [Motion Sensor](.assets/md%20files/motion_sensor.md)
       Using a Passive InfRared (PIR) motin senosr to detect target movement in front of the sensor. 
       This can be used as a trigger mechanism for a larger operation. e.g., turning lights on/off, setting of an alarm etc.
+  
+  1. [Accelerometer](.assets/md%20files/accelerometer.md)
+      Using a 3 axis digital motion sensor to detect changes in positioning relative to a 3D cartecian plane. It can be used to inform motors of theri relative position in hopes of stabilizing movement such as flying or staying upright.
 
 ### Projects<a name="projects"> </a>
 #### 1. [Temperature and Humidity Sensor Project](.assets/md%20projects/temp_humid.md)
