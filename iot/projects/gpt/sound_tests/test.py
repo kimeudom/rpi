@@ -6,7 +6,7 @@ import time
 # Serial port settings
 # /dev/ttyACM1
 
-SERIAL_PORT = "/dev/ttyACM"
+SERIAL_PORT = "/dev/ttyACM0"
 BAUD_RATE = 9600
 
 # WAV file settings
