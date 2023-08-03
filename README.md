@@ -202,6 +202,8 @@ For Linux systems
   
   1. [Accelerometer](.assets/md%20files/accelerometer.md)
       Using a 3 axis digital motion sensor to detect changes in positioning relative to a 3D cartecian plane. It can be used to inform motors of theri relative position in hopes of stabilizing movement such as flying or staying upright.
+  1. [Sound Sensor](.assets/md%20files/sound_sensor.md)
+      Using the **KY-038** sound sensor, we can perform sound decible threshold measurements. If the surroungin sound exceeds a particular threshold, the sensor will detect and alert on this.
 
 ### Projects<a name="projects"> </a>
 #### 1. [Temperature and Humidity Sensor Project](.assets/md%20projects/temp_humid.md)
