@@ -1,5 +1,5 @@
 {
     "board": "arduino:avr:uno",
     "sketch": "iot/projects/gpt/ard/mic_serial_read/mic_serial_read.ino",
-    "port": "/dev/ttyACM1"
+    "port": "/dev/ttyACM0"
 }
