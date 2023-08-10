@@ -1,5 +1,5 @@
 const int micInput = A0;  // Analog pin for KY-038 sensor
-const int BAUD_RATE = 9600;
+const int BAUD_RATE = 11520;
 
 void setup() {
   Serial.begin(BAUD_RATE);  // Initialize serial communication at specified baud rate
