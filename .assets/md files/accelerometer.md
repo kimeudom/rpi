@@ -4,9 +4,10 @@ The ADXL345 is a 3 axis digital accelerometer. It utilizes the **I2C** and or **
 It's application can range from motion sensing, tilt sensing, impact detection, freefall detection and vibration monitoring.
 
 ### [DataSheet](../docs/ADXL345_DATA%20SHEET.pdf)
+### [Detailed Datasheet](../docs/ADXL345_More_Detailed.pdf)
 
 
-# Displaying real-time 3 axis data
+# Displaying real-time 3 axis acceleration data
 #### Components List
   1. 1 - ADXL345 with header pins soldered
   1. 4 - F to F connectors
